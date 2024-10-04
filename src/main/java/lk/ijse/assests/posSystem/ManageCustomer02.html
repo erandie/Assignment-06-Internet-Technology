@@ -14,6 +14,7 @@
         body{
             background-color: #333333;
             padding-bottom: 100px;
+            padding-top: 50px;
         }
 
         .card {
@@ -56,9 +57,6 @@
             border-radius: 10px;
         }
 
-        .modal-content{
-            background-color: #333333;
-        }
 
         .save-button{
             background-color: #588449;
@@ -81,6 +79,14 @@
             margin-bottom: 20px;
         }
 
+        .modal-content{
+            padding: 60px 50px;
+            width: 900px;
+            height: 470px;
+            background-color: #333333;
+            transition: i;
+        }
+
         .modal-header {
             border-bottom-color: #646464;
             border-bottom-width: 3px;
@@ -94,6 +100,12 @@
         .form-control{
             border-radius: 20px;
             transition: transform 0.2s ease;
+            opacity: 85%;
+        }
+
+        .modal-title{
+           margin-left: 240px;
+            font-size-adjust: 0.8;
         }
 
         .custom-btn{
@@ -143,6 +155,19 @@
             color: white;
         }
 
+        .placeholder-glow{
+            margin-top: -22px;
+            opacity: 40%;
+        }
+
+        /*.placeholder-glow{*/
+        /*    margin-bottom: -3px;*/
+        /*    opacity: 50%;*/
+        /*}*/
+
+
+
+
 
     </style>
 
@@ -152,6 +177,7 @@
 <div class="container mt-5">
 
     <h2 class="text-center">Manage Customers</h2>
+
 
     <div class="card">
 
@@ -259,6 +285,10 @@
 <!--            <button type="button" class="btn btn-secondary btn-sm update-btn custom-btn">Update</button>-->
 
 
+<!--            <p class="placeholder-glow">-->
+<!--                <span class="placeholder col-12"></span>-->
+<!--            </p>-->
+
             <div class="table-responsive">
             <table class="table table-dark table-striped-columns">
 
@@ -301,11 +331,14 @@
                 </tr>
                 </tbody>
             </table>
+                <p class="placeholder-glow">
+                    <span class="placeholder col-12"></span>
+                </p>
             </div>
 
             <button class="btn btn-secondary btn-block update-btn btn-sm back-btn custom-btn">
 
-                <a href="/lk/ijse/assests/dashBoard.html"> Dashboard </a>
+                <a href="dashBoard.html"> Dashboard </a>
 
             </button>
 
