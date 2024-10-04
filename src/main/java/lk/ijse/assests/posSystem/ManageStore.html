@@ -22,7 +22,7 @@
             color: white;
             border-radius: 10px;
             /*padding: 40px;*/
-            padding: 25px 50px 50px;
+            padding: 40px 80px 30px;
             margin-left: 70px;
             margin-right: 70px;
         }
@@ -58,7 +58,11 @@
         }
 
         .modal-content{
+            padding: 60px 50px;
+            width: 900px;
+            height: 470px;
             background-color: #333333;
+            transition: i;
         }
 
         .save-button{
@@ -90,6 +94,11 @@
         .modal-footer {
             border-top-color: #646464;
             border-top-width: 3px;
+        }
+
+        .modal-title{
+            margin-left: 240px;
+            font-size-adjust: 0.8;
         }
 
         .form-control{
@@ -136,11 +145,6 @@
             }
         }
 
-        .back-btn{
-            position: absolute;
-            right: 50px;
-        }
-
         a{
             color: white;
         }
@@ -148,6 +152,10 @@
         .placeholder-glow{
             margin-top: -22px;
             opacity: 40%;
+        }
+
+        .back-btn{
+            margin-top: 14px;
         }
 
     </style>
@@ -194,13 +202,13 @@
 
                             <div class="row">
                                 <div class="col-md-6 mb-3">
-                                    <label class="customerAddress" id="input-field_03">Item Address</label>
-                                    <input id="address-input" type="text" class="form-control" placeholder="Item Address">
+                                    <label class="quantity" id="input-field_03">quantity</label>
+                                    <input id="quantity" type="text" class="form-control" placeholder="Quantity">
                                 </div>
 
                                 <div class="col-md-6 mb-3">
-                                    <label class="contact" id="input-field_04">Contact</label>
-                                    <input id="contact" type="text" class="form-control" placeholder="Contact Details">
+                                    <label class="unitPrice" id="input-field_04">Unit Price</label>
+                                    <input id="unitPrice" type="text" class="form-control" placeholder="Unit Price">
                                 </div>
                             </div>
                         </div>
@@ -225,25 +233,25 @@
 
             <div class="row">
                 <div class="col-md-6 mb-3">
-                    <label class="customerID"  id="input-field_001">Item ID</label>
+                    <label class="itemID"  id="input-field_001">Item ID</label>
                     <input id="id-inputt" type="text" class="form-control" placeholder="Item ID">
                 </div>
 
                 <div class="col-md-6 mb-3">
-                    <label class="customerName"  id="input-field_002">Item Name</label>
+                    <label class="itemName"  id="input-field_002">Item Name</label>
                     <input id="name-inputt" type="text" class="form-control" placeholder="Item Name">
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-md-6 mb-3">
-                    <label class="customerAddress" id="input-field_003">Item Address</label>
-                    <input id="address-inputt" type="text" class="form-control" placeholder="Item Address">
+                    <label class="quantity" id="input-field_003">Quantity</label>
+                    <input id="quantityy" type="text" class="form-control" placeholder="Quantity">
                 </div>
 
                 <div class="col-md-6 mb-3">
-                    <label class="contact" id="input-field_004">Contact</label>
-                    <input id="contactt" type="text" class="form-control" placeholder="Contact Details">
+                    <label class="unitPrice" id="input-field_004">Unit Price</label>
+                    <input id="unitPricee" type="text" class="form-control" placeholder="Unit Price">
                 </div>
             </div>
 
